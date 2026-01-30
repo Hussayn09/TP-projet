@@ -275,7 +275,7 @@ class Controller:
 #  Vérifier la validité de l'email
         if not self.valider_email(email):
             self.vue.message_erreur("Erreur", "Email invalide")
-        return
+            return
 
 #  Appeler le modèle pour modifier le contact
         self.modele.modifier_contact(contact_id, nom, prenom, telephone, email, adresse)
